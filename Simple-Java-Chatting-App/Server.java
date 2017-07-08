@@ -1,5 +1,3 @@
-package server_client;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -34,7 +32,7 @@ public class Server
         }
     }
 
-   
+    // Thread ..
     private static class HandlerForMultipleClient extends Thread
     {
         private String name;
