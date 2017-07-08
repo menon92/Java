@@ -34,7 +34,7 @@ public class Client
 	JTextField uname;
 	String name;
 	
-	// constructor 
+	// constructor . 
 	Client()
 	{
 		// Design part of the Client			
