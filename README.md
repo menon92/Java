@@ -1,2 +1,3 @@
-# Project
-This is readme section. Write important thing of your project
+### Demo
+
+![ChatImage](https://github.com/menon92/Java-Project/blob/master/Java_Chat.png)
