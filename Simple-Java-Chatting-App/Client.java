@@ -1,5 +1,3 @@
-package server_client;
-
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,10 +34,10 @@ public class Client
 	JTextField uname;
 	String name;
 	
+	// constructor 
 	Client()
 	{
-		// Design part of the Client
-				
+		// Design part of the Client			
 		frame = new JFrame();
 		panel = new JPanel();
 		NewMsg = new JTextField();
@@ -68,7 +66,6 @@ public class Client
 		panel.add(Send);
 		
 		frame.add(panel);
-		
 		// End of GUI Design
 		
 		// When Send button Clicked
@@ -84,12 +81,10 @@ public class Client
 		
 		// When we enter form Jtext field ;
 		NewMsg.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				out.println(NewMsg.getText()); // put the value of NewMsg area in the out;
 				NewMsg.setText(""); // free the text field of NewMsg area.
-				
 			}
 		});
 	}
@@ -130,7 +125,8 @@ public class Client
         }
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Client myClient = new Client();
 		 try {
 			myClient.connectToServer();
